@@ -57,3 +57,12 @@ a {
 .active {
   display: block;
 }
+
+/* -------- main-page --------- */
+.container {
+  min-height: 500px;
+}
+
+img {
+  max-width: 300px;
+}
