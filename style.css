@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ------- top-navigation ------- */
+
+.nav {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__item {
+  display: inline-block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hamburger__content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+}
+
+.hamburger__item {
+  display: block;
+  padding: 2 rem;
+}
+
+.active {
+  display: block;
+}
