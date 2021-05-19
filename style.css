@@ -89,7 +89,6 @@ a {
   max-width: 300px;
 }
 
-
 img {
   width: 100%;
   justify-content: center;
@@ -103,6 +102,28 @@ img {
 .container-info {
   background-color: #e7edfd;
 }
+
+/* ------- footer -------- */
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px;
+}
+
+svg {
+  width: 80px;
+  margin-left: 10px;
+}
+
+/* ------ responsivity ----- */
 
 @media (min-width: 768px) {
   .container-intro {
