@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Inconsolata', monospace;
+}
+
 /* ------- top-navigation ------- */
 
 .nav {
@@ -9,6 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .menu__item {
@@ -18,6 +23,7 @@
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 a {
@@ -40,7 +46,7 @@ a {
   display: none;
   left: 0;
   top: 50px;
-  min-width: 69px;
+  width: inherit;
   position: absolute;
 }
 
@@ -58,11 +64,37 @@ a {
   display: block;
 }
 
+/* nefunguje!!! */
+.nav__logo  {
+  padding-left: 1rem;
+}
+
 /* -------- main-page --------- */
 .container {
   min-height: 500px;
 }
 
-img {
+.container__image {
   max-width: 300px;
+}
+
+.container-intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  width: 100%;
+  justify-content: center;
+}
+
+.content__header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .container-intro {
+    flex-wrap: nowrap;
+  }
 }
