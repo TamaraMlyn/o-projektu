@@ -123,6 +123,45 @@ svg {
   margin-left: 10px;
 }
 
+/* -------- profile-page --------- */
+
+.container__profile {
+  display: flex;
+  flex-direction: row;
+}
+
+.profile__description {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 4rem;
+}
+
+.profile__header {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #1b0e91;
+  margin: 0;
+  padding-left: 3rem;
+}
+
+.profile__content {
+background-color: #e7edfd;
+padding: 3rem;
+max-height: 400px;
+}
+
+.profile__pic {
+  margin-top: 8rem;
+  margin-left: 2rem;
+  border-radius: 50%;
+  height: 15rem;
+  width: 15rem;
+  object-fit: cover;
+}
+
+
 /* ------ responsivity ----- */
 
 @media (min-width: 768px) {
