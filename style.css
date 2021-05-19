@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: 'Inconsolata', monospace;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* ------- top-navigation ------- */
@@ -24,10 +24,12 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 .menu__item {
@@ -35,7 +37,8 @@ a {
 }
 
 .menu__item:hover {
-  background-color: lightcoral;
+  background-color: white;
+  border-bottom: 1px solid #fe7062;
 }
 
 .hamburger {
@@ -52,12 +55,12 @@ a {
 
 .hamburger__item {
   display: block;
-  background-color: grey;
+  background-color: #bcd0fb;
   padding: 0.5rem;
 }
 
 .hamburger__item:hover {
-  background-color: lightcoral;
+  background-color: #fe7062;
 }
 
 .active {
@@ -71,11 +74,25 @@ a {
 
 /* -------- main-page --------- */
 .container {
-  min-height: 500px;
+  min-height: 200px;
+  padding: 20px;
+}
+
+.content__header {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #1b0e91;
+  margin: 0;
 }
 
 .container__image {
   max-width: 300px;
+}
+
+
+img {
+  width: 100%;
+  justify-content: center;
 }
 
 .container-intro {
@@ -83,14 +100,8 @@ a {
   flex-wrap: wrap;
 }
 
-img {
-  width: 100%;
-  justify-content: center;
-}
-
-.content__header {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+.container-info {
+  background-color: #e7edfd;
 }
 
 @media (min-width: 768px) {
