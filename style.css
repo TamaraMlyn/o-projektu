@@ -91,8 +91,7 @@ a {
 }
 
 .content__description {
-  font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .container__image {
@@ -179,6 +178,13 @@ max-height: 400px;
 }
 
 /* ------ responsivity ----- */
+
+@media (min-width: 400px) {
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+}
+}
 
 @media (min-width: 768px) {
   .container-intro {
