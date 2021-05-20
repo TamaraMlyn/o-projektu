@@ -20,6 +20,7 @@ body {
 
 .menu__item {
   display: inline-block;
+  padding: 1rem;
 }
 
 ul {
@@ -34,9 +35,6 @@ a {
   color: black;
 }
 
-.menu__item {
-  padding: 1rem;
-}
 
 .menu__item:hover {
   background-color: white;
@@ -125,16 +123,13 @@ img {
 }
 
 footer {
-  /* position: fixed; */
   margin: 0 auto;
-  left: 0;
-  bottom: 0;
   width: 100%;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 svg {
-  width: 80px;
+  width: 60px;
   margin-left: 10px;
 }
 
@@ -195,8 +190,5 @@ max-height: 400px;
     margin-left: 5rem;
 }
 
-footer {
-  position: fixed;
-}
 
 }
