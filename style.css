@@ -75,6 +75,7 @@ a {
 }
 
 /* -------- main-page --------- */
+
 .container {
   min-height: 200px;
   padding: 20px;
@@ -106,6 +107,11 @@ img {
 }
 
 /* ------- footer -------- */
+
+.container-footer {
+  display: none;
+  }
+  
 .container-footer {
   display: flex;
   justify-content: center;
@@ -113,7 +119,8 @@ img {
 }
 
 footer {
-  position: fixed;
+  /* position: fixed; */
+  margin: 0 auto;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -164,7 +171,6 @@ max-height: 400px;
   object-fit: cover;
 }
 
-
 /* ------ responsivity ----- */
 
 @media (min-width: 768px) {
@@ -175,4 +181,9 @@ max-height: 400px;
   .profile__pic {
     margin-left: 5rem;
 }
+
+footer {
+  position: fixed;
+}
+
 }
