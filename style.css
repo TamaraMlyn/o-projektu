@@ -14,6 +14,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
+  padding-left: 1rem;
 }
 
 .menu__item {
@@ -67,8 +68,9 @@ a {
   display: block;
 }
 
-/* nefunguje!!! */
-.nav__logo  {
+/* nefunguje!!! */ 
+/* Tami, zagungovalo mi to, keď som pridala tento padding hore do .nav */
+.nav__logo {
   padding-left: 1rem;
 }
 
@@ -128,10 +130,11 @@ svg {
 .container__profile {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .profile__description {
-  margin-top: 4rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   padding: 2rem 4rem;
@@ -153,8 +156,8 @@ max-height: 400px;
 }
 
 .profile__pic {
-  margin-top: 8rem;
-  margin-left: 2rem;
+  margin: 0 auto;
+  margin-top: 4rem;
   border-radius: 50%;
   height: 15rem;
   width: 15rem;
@@ -168,4 +171,8 @@ max-height: 400px;
   .container-intro {
     flex-wrap: nowrap;
   }
+
+  .profile__pic {
+    margin-left: 5rem;
+}
 }
