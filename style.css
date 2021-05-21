@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 
 /* ------- top-navigation ------- */
@@ -65,7 +66,6 @@ a {
   display: block;
 }
 
-
 /* -------- main-page --------- */
 
 .container {
@@ -78,10 +78,6 @@ a {
   font-weight: 700;
   color: #1b0e91;
   margin: 16px 0;
-}
-
-.container-intro-description {
-  font-size: 1.3rem;
 }
 
 .container__image {
@@ -108,6 +104,14 @@ img {
   margin-bottom: 32px;
 }
 
+.content__text {
+  line-height: 1.5rem;
+}
+
+.container-intro-description {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
 /* ------- footer -------- */
 
 .container-footer {
@@ -158,7 +162,7 @@ svg {
 .profile__content {
   background-color: #e7edfd;
   padding: 3rem;
-  max-height: 400px;
+  min-height: 200px;
 }
 
 .profile__pic {
@@ -190,15 +194,10 @@ svg {
 
   .container__content {
     margin: 0 30px;
-    max-width: 850px;
+    max-width: 950px;
     line-height: 1.5rem;
   }
 
-  .container-intro-description {
-    line-height: 2rem;
-
-  }
-  
   .profile__pic {
     margin-left: 5rem;
   }
