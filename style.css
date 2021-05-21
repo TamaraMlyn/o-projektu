@@ -15,7 +15,6 @@ body {
   align-items: center;
   font-family: 'Montserrat', sans-serif;
   padding-left: 1rem;
-
 }
 
 .menu__item {
@@ -34,7 +33,6 @@ a {
   text-decoration: none;
   color: black;
 }
-
 
 .menu__item:hover {
   background-color: white;
@@ -67,28 +65,22 @@ a {
   display: block;
 }
 
-/* nefunguje!!! */ 
-/* Tami, zagungovalo mi to, keď som pridala tento padding hore do .nav */
-.nav__logo {
-  padding-left: 1rem;
-}
 
 /* -------- main-page --------- */
 
 .container {
   min-height: 200px;
-  padding: 20px;
+  padding: 30px;
 }
 
 .content__header {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: #1b0e91;
-  margin: 0;
-  margin-top: 1.3rem;
+  margin: 16px 0;
 }
 
-.content__description {
+.container-intro-description {
   font-size: 1.3rem;
 }
 
@@ -104,18 +96,24 @@ img {
 .container-intro {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .container-info {
   background-color: #e7edfd;
 }
 
+.header--intro {
+  margin-bottom: 32px;
+}
+
 /* ------- footer -------- */
 
 .container-footer {
   display: none;
-  }
-  
+}
+
 .container-footer {
   display: flex;
   justify-content: center;
@@ -158,9 +156,9 @@ svg {
 }
 
 .profile__content {
-background-color: #e7edfd;
-padding: 3rem;
-max-height: 400px;
+  background-color: #e7edfd;
+  padding: 3rem;
+  max-height: 400px;
 }
 
 .profile__pic {
@@ -175,20 +173,33 @@ max-height: 400px;
 /* ------ responsivity ----- */
 
 @media (min-width: 400px) {
-.nav__menu {
-  display: flex;
-  flex-direction: row;
-}
+  .nav__menu {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 768px) {
+  .container {
+    display: flex;
+  }
+
   .container-intro {
     flex-wrap: nowrap;
   }
 
+  .container__content {
+    margin: 0 30px;
+    max-width: 850px;
+    line-height: 1.5rem;
+  }
+
+  .container-intro-description {
+    line-height: 2rem;
+
+  }
+  
   .profile__pic {
     margin-left: 5rem;
-}
-
-
+  }
 }
